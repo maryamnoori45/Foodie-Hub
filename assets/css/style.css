@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+
+body{
+    font-family: "Spline Sans" , sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+a:hover{
+    color: #f58d17;
+}
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover{
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Btn */
+.btn{
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand{
+    color: #fff;
+    font-size: 500;
+    border-color: #f58d17;
+    background-color: #f58d17;
+}
+
+.btn-brand:hover{
+    border-color: #ca7810;
+    background-color: #ca7810;
+    color: #fff;
+
+}
+/* slider */
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+background-repeat:no-repeat !important ;
+}
+.slide-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url( ../images/cover-1a.jpg);
+    
+}
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/cover-2.jpg);
+   
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+   content: "";
+   width: 40px;
+   height: 4px;
+   background-color: #fff;
+   display: inline-block;
+   margin: 10px;
+   vertical-align: middle;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+{
+ background-color: rgba(0,0 ,0 ,0.6);
+ width: 40px;
+ height: 70px;
+ margin: auto;
+}
+
+/* about */
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #f58d17;
+}
+
+/* intro text */
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Menu */
+#menu .nav-pills .nav-link{
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+ p.price{
+  font-weight: bold;
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #f58d17;
+    color: #fff;
+}
+
+.menu-item .stars{
+    color: #f58d17;
+
+}
+
+/* Restaurant Card Styling */
+.restaurant-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restaurant-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.restaurant-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.shadow-on-hover {
+  transition: all 0.3s ease;
+}
+
+.shadow-on-hover:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Reservation */
+
+#reservation .form-control{
+    border-radius: 0;
+}
+
+#reservation .form-control:focus{
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #f58d17;
+}
+
+#reservation input.form-control{
+    height: 47px;
+}
+
+/* footer */
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)) url(../images/cover-10.jpg);
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .carousel-item h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-item h6 {
+    font-size: 1rem;
+  }
+
+  #about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .restaurant-card img,
+  .menu-item img {
+    height: 140px;
+  }
+
+  .restaurant-card h5,
+  .menu-item h5 {
+    font-size: 1rem;
+  }
+
+  .restaurant-card p,
+  .menu-item p {
+    font-size: 0.85rem;
+  }
+
+  #reservation input.form-control {
+    height: 40px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  footer .text-md-start,
+  footer .text-md-end {
+    text-align: center !important;
+  }
+}

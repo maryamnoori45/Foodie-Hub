@@ -30,12 +30,12 @@ img{
 }
 
 img.logo {
+  max-width: 150px; /* adjust for desktop */
   width: 100%;
-  max-width: 160px; /* LIMIT size */
   height: auto;
   display: block;
-  margin: 0 auto;
 }
+
 
 
 
@@ -275,7 +275,8 @@ footer{
 
 @media (max-width: 575.98px) {
   img.logo {
-    max-width: 120px; /* smaller on phones */
+    max-width: 80px; /* smaller on phones */
   }
 }
+
 

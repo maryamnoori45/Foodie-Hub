@@ -28,8 +28,7 @@ img{
 }
 
 .img{
-    height: auto;
-     max-width: 100%;
+    width: 100%;
 }
 
 img.logo {
@@ -234,7 +233,7 @@ footer{
     font-size: 1rem;
   }
 
-  #about img {
+  #about .img {
     max-width: 100%;
     height: auto;
   }
@@ -276,12 +275,12 @@ footer{
   }
 }
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   img.logo {
     max-width: 30px; /* smaller on phones */
   }
 }
-
+ */
 @media (max-width: 600px) {
   img.logo {
     width: 30px;   /* smaller on phones */

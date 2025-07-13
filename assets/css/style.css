@@ -30,10 +30,13 @@ img{
 }
 
 img.logo {
-    max-width: 50px;
-    width: 50%;
-    height: auto;
+  width: 100%;
+  max-width: 160px; /* LIMIT size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
 
 section{
@@ -272,6 +275,7 @@ footer{
 
 @media (max-width: 575.98px) {
   img.logo {
-    max-width: 50px;
+    max-width: 120px; /* smaller on phones */
   }
 }
+

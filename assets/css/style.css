@@ -279,4 +279,10 @@ footer{
   }
 }
 
+@media (max-width: 600px) {
+  img.logo {
+    width: 30px;   /* smaller on phones */
+  }
+
+
 

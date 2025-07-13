@@ -24,6 +24,12 @@ img{
     width: 100%;
 }
 
+img.logo {
+    width: 100%;
+    height: auto;
+}
+
+
 section{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -256,4 +262,10 @@ footer{
   footer .text-md-end {
     text-align: center !important;
   }
+}
+
+@media (max-width: 600px) {
+    img .logo {
+        width: 80%;
+    }
 }

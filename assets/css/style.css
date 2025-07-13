@@ -275,7 +275,7 @@ footer{
 
 @media (max-width: 575.98px) {
   img.logo {
-    max-width: 30px; /* smaller on phones */
+    max-width: 25px; /* smaller on phones */
   }
 }
 
